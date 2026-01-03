@@ -5,115 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oguzhan Kirik</title>
   <meta name="description" content="Oguzhan Kirik — research on adaptable skills for robot VLA models and reinforcement learning." />
-  <style>
-    :root { --fg:#111; --muted:#555; --link:#0b5fff; --bg:#fff; --card:#f6f7f9; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 48px 20px; }
-    header { display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
-    h1 { margin:0; font-size: 40px; letter-spacing:-0.5px; }
-    .tagline { margin: 10px 0 0; color: var(--muted); font-size: 18px; line-height: 1.5; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .grid { display:grid; grid-template-columns: 1fr; gap:16px; margin-top: 28px; }
-    @media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .card { background: var(--card); border-radius: 16px; padding: 18px 18px; }
-    h2 { margin: 0 0 10px; font-size: 18px; }
-    ul { margin: 0; padding-left: 18px; }
-    li { margin: 6px 0; }
-    .footer { margin-top: 36px; color: var(--muted); font-size: 14px; }
-    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#eef3ff; margin:6px 6px 0 0; font-size: 13px; }
 
-    /* Styled links */
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --fg: #0f172a;
+      --muted: #475569;
+      --primary: #2563eb;
+      --secondary: #06b6d4;
+      --card: #ffffff;
+      --pill: #e0f2fe;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: -0.6px;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Links */
     .links {
-      margin-top: 14px;
+      margin-top: 18px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
+
     .links a {
-      background: #ffffff;
-      border: 1px solid #e3e6eb;
-      padding: 8px 14px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      padding: 9px 16px;
       border-radius: 999px;
       font-size: 14px;
       color: var(--fg);
-      transition: all 0.15s ease;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
     }
+
     .links a:hover {
-      background: #eef3ff;
-      border-color: #cfd9ff;
+      background: #f0f9ff;
+      border-color: var(--primary);
+      transform: translateY(-2px);
       text-decoration: none;
-      transform: translateY(-1px);
+    }
+
+    /* Pills */
+    .pills {
+      margin-top: 16px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--pill);
+      margin: 6px 6px 0 0;
+      font-size: 13px;
+      color: #075985;
+      font-weight: 500;
+    }
+
+    /* Content */
+    .content {
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: var(--primary);
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
     }
   </style>
 </head>
 
 <body>
   <div class="wrap">
+
     <header>
-      <div>
-        <h1>Oguzhan Kirik</h1>
-        <p class="tagline">
-          Research in <strong>robot learning</strong>, focusing on <strong>adaptable skills</strong>,
-          <strong>Vision–Language–Action (VLA) models</strong>, and <strong>reinforcement learning</strong>.
-        </p>
+      <h1>Oguzhan Kirik</h1>
 
-        <div class="links">
-          <a href="mailto:kirikoguzhan@gmail.com" title="Email">✉️ Email</a>
-          <a href="https://github.com/OguzhanKirik" title="GitHub">💻 GitHub</a>
-          <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en" title="Google Scholar">📚 Scholar</a>
-          <a href="https://www.linkedin.com/in/oguzhankirik/" title="LinkedIn">🔗 LinkedIn</a>
-          <a href="cv.pdf" title="CV">📄 CV</a>
-        </div>
+      <p class="tagline">
+        Research in <strong>robot learning</strong>, focusing on
+        <strong>adaptable skills</strong>,
+        <strong>Vision–Language–Action (VLA) models</strong>,
+        and <strong>reinforcement learning</strong>.
+      </p>
 
-        <div style="margin-top:10px;">
-          <span class="pill">Robotics</span>
-          <span class="pill">VLA</span>
-          <span class="pill">Reinforcement Learning</span>
-          <span class="pill">Skill Learning</span>
-        </div>
+      <div class="links">
+        <a href="mailto:kirikoguzhan@gmail.com">✉️ Email</a>
+        <a href="https://github.com/OguzhanKirik">💻 GitHub</a>
+        <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">📚 Scholar</a>
+        <a href="https://www.linkedin.com/in/oguzhankirik/">🔗 LinkedIn</a>
+        <a href="cv.pdf">📄 CV</a>
+      </div>
+
+      <div class="pills">
+        <span class="pill">Robotics</span>
+        <span class="pill">Vision–Language–Action</span>
+        <span class="pill">Reinforcement Learning</span>
+        <span class="pill">Skill Learning</span>
       </div>
     </header>
 
-    <div class="grid">
+    <div class="content">
       <section class="card">
         <h2>Research interests</h2>
         <ul>
-          <li>Adaptable skill learning for robots</li>
-          <li>Vision–Language–Action (VLA) models for embodied agents</li>
-          <li>Reinforcement learning for long-horizon manipulation</li>
-          <li>Generalization, transfer, and robustness in robotic control</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Project 1:</strong> Add a short description + link</li>
-          <li><strong>Project 2:</strong> Add a short description + link</li>
-          <li><strong>Project 3:</strong> Add a short description + link</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Publications / writing</h2>
-        <ul>
-          <li>Add papers, preprints, blog posts, or reading notes here</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Talks / contact</h2>
-        <ul>
-          <li>Contact: <a href="mailto:kirikoguzhan@gmail.com">kirikoguzhan@gmail.com</a></li>
-          <li>Google Scholar: <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">profile</a></li>
-          <li>Open to: collaborations / internships (edit as you like)</li>
+          <li>Adaptable skill learning for robotic manipulation and control</li>
+          <li>Vision–Language–Action models for embodied agents</li>
+          <li>Reinforcement learning for long-horizon and compositional tasks</li>
+          <li>Generalization, transfer, and robustness in robot learning</li>
         </ul>
       </section>
     </div>
 
     <p class="footer">
-      Hosted on GitHub Pages. © <span id="y"></span> Oguzhan Kirik.
+      © <span id="y"></span> Oguzhan Kirik · Hosted on GitHub Pages
     </p>
   </div>
 
