@@ -187,7 +187,7 @@
       color: var(--ink);
     }
 
-    main section {
+    main > section:not(.hero) {
       padding: 30px 0;
       border-bottom: 1px solid var(--rule);
     }
@@ -382,67 +382,14 @@
       </div>
 
       <nav class="topnav" aria-label="Primary">
-        <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#interests">Interests</a>
         <a href="cv.pdf">CV</a>
       </nav>
     </header>
 
-    <section class="hero" id="about">
-      <div>
-        <span class="eyebrow">Research / Study / Practice</span>
-        <p class="lede">
-          Research in <strong>adaptable skills</strong>, <strong>Vision-Language-Action models</strong>, and
-          <strong>reinforcement learning</strong> for embodied systems.
-        </p>
-
-        <p class="intro-copy">
-          I work on robot learning with an emphasis on manipulation, generalization, and practical deployment.
-          My background spans robot perception, motion planning, and hands-on work with drones and mobile robotic
-          systems for localization and navigation. This page collects selected projects and research directions in a
-          calmer, editorial format inspired by programme and study-page layouts.
-        </p>
-      </div>
-
-      <div class="hero-side">
-        <figure class="portrait">
-          <img src="profile.jpg" alt="Portrait of Oguzhan Kirik" />
-        </figure>
-
-        <div class="contact-panel">
-          <span class="section-label">Contact</span>
-          <a href="mailto:kirikoguzhan@gmail.com">kirikoguzhan@gmail.com</a>
-          <a href="https://github.com/OguzhanKirik">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/oguzhankirik/">LinkedIn</a>
-          <a href="cv.pdf">Curriculum Vitae</a>
-        </div>
-      </div>
-    </section>
-
     <main>
-      <section>
-        <div class="section-head">
-          <div class="section-label">Profile</div>
-          <div>
-            <h2>Research Focus</h2>
-            <p class="section-copy">
-              The current thread of my work is centered on adaptable robot behaviour: how policies acquire reusable
-              skills, how language interfaces with action, and how learned systems remain robust when moved from
-              controlled environments toward practical settings.
-            </p>
-          </div>
-        </div>
-
-        <div class="links-grid">
-          <a href="mailto:kirikoguzhan@gmail.com">Email <span>/ direct contact</span></a>
-          <a href="cv.pdf">CV <span>/ full academic profile</span></a>
-          <a href="https://github.com/OguzhanKirik">GitHub <span>/ repositories and experiments</span></a>
-          <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">Scholar <span>/ publications and citations</span></a>
-        </div>
-      </section>
-
       <section id="projects">
         <div class="section-head">
           <div class="section-label">Selected Work</div>
@@ -624,6 +571,69 @@
               />
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="hero" id="about">
+        <div>
+          <span class="eyebrow">About Me</span>
+          <p class="lede">
+            Robotics and AI engineer working across <strong>automation</strong>, <strong>robot learning</strong>, and
+            <strong>machine vision</strong> for intelligent robotic systems.
+          </p>
+
+          <p class="intro-copy">
+            I am based in Berlin and work at the intersection of robotics, perception, and AI deployment. My experience
+            spans research and engineering roles at Technical University Berlin, Relimetrics, KIT, ZKM, and INVITE,
+            alongside independent work on early-stage robotics ventures. Across these roles I have built and deployed
+            systems for robot manipulation, path planning, sensor fusion, predictive maintenance, industrial automation,
+            and real-world experimentation.
+          </p>
+
+          <p class="intro-copy">
+            My academic background is in mechanical engineering with a robotics track: an M.Sc. in Mechanical
+            Engineering with a major in Robotics and Mechatronics from Karlsruhe Institute of Technology, a DSH-2
+            German course at the University of Wuppertal, and a B.Sc. in Mechanical Engineering from Yildiz Technical
+            University. I am particularly interested in adaptable robot behavior, vision-language-action models,
+            reinforcement learning, and practical systems that connect research prototypes to deployable products.
+          </p>
+        </div>
+
+        <div class="hero-side">
+          <figure class="portrait">
+            <img src="profile.jpg" alt="Portrait of Oguzhan Kirik" />
+          </figure>
+
+          <div class="contact-panel">
+            <span class="section-label">Contact</span>
+            <a href="mailto:kirikoguzhan@gmail.com">kirikoguzhan@gmail.com</a>
+            <a href="https://github.com/OguzhanKirik">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/oguzhankirik/">LinkedIn</a>
+            <a href="cv.pdf">Curriculum Vitae</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div class="section-label">Profile</div>
+          <div>
+            <h2>Education and Focus</h2>
+            <p class="section-copy">
+              My training in mechanical engineering and robotics is paired with hands-on work in AI-driven automation,
+              robot manipulation, perception, and autonomous systems. That combination shapes a research direction
+              centered on reusable robot skills, language-conditioned control, and robust deployment beyond controlled
+              lab settings.
+            </p>
+          </div>
+        </div>
+
+        <div class="links-grid">
+          <a href="mailto:kirikoguzhan@gmail.com">Email <span>/ direct contact</span></a>
+          <a href="cv.pdf">CV <span>/ full academic profile</span></a>
+          <a href="https://github.com/OguzhanKirik">GitHub <span>/ repositories and experiments</span></a>
+          <a href="https://scholar.google.com/citations?user=jcpNO5kAAAAJ&hl=en">Scholar <span>/ publications and citations</span></a>
         </div>
       </section>
 
