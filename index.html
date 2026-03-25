@@ -297,8 +297,7 @@
     .project-media img,
     .project-media video {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
     }
 
     .citation {
@@ -464,13 +463,42 @@
           <div>
             <h2>Projects</h2>
             <p class="section-copy">
-              Four recent projects trace a line from imitation learning and language-conditioned manipulation to
-              perception pipelines and reinforcement-learning environments for robots.
+              Five recent projects trace a line from foundation models and imitation learning to
+              language-conditioned manipulation, perception pipelines, and reinforcement-learning environments for robots.
             </p>
           </div>
         </div>
 
         <div class="projects">
+          <article class="project">
+            <div>
+              <h3>OpenVLA Evaluation for Language-Conditioned Pick-and-Place</h3>
+              <p class="project-copy">
+                A compact evaluation study of OpenVLA on tabletop manipulation prompts involving the same object under
+                different spatial contexts. The GIF shows six successful trajectories with instruction-specific scenes,
+                covering retrieval from the top drawer, ramekin, cookie-box, stove, plate, and cabinet settings. The
+                result highlights how a generalist vision-language-action model can stay responsive to changing natural
+                language instructions while preserving coherent pick-and-place behaviour across layouts.
+              </p>
+              <div class="project-meta">
+                <span>OpenVLA</span>
+                <span>Vision-Language-Action</span>
+                <span>Evaluation</span>
+              </div>
+              <p class="citation">
+                Selected evaluation montage assembled from six successful OpenVLA rollouts recorded on March 8, 2026,
+                each labeled by instruction context.
+              </p>
+            </div>
+
+            <div class="project-media">
+              <img
+                src="openvla-eval-grid.gif"
+                alt="Animated six-panel OpenVLA evaluation montage showing pick-and-place tasks under different instruction contexts"
+              />
+            </div>
+          </article>
+
           <article class="project">
             <div>
               <h3>Diffusion Policy for Robotic Stacking</h3>
