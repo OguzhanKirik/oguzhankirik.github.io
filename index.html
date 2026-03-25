@@ -153,6 +153,43 @@ Expertise includes robot perception algorithms (2D/3D), motion planning, and han
       font-size: 14px;
       color: var(--muted);
     }
+
+    .project-media {
+      margin-top: 18px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+    }
+
+    .project-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .project-links {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .project-links a {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 8px 14px;
+      border-radius: 999px;
+      color: var(--fg);
+      font-size: 14px;
+    }
+
+    .citation {
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
   </style>
 </head>
 
@@ -197,6 +234,31 @@ Expertise includes robot perception algorithms (2D/3D), motion planning, and han
           This website is currently under active development.
           More content, publications, and project details will be added soon.
           Please check back later or feel free to reach out via email.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Selected project: Modular DRL Gym Env for Robots with PyBullet</h2>
+        <p style="color: var(--muted); line-height: 1.7; margin: 8px 0 0;">
+          A modular deep reinforcement learning framework for robotic path planning and manipulation in PyBullet,
+          built around configurable robots, goals, and sensor setups. The project also includes a sim-to-real
+          deployment pipeline using ROS and voxelized perception so trained policies can transfer to real robot
+          environments with static and dynamic obstacles.
+        </p>
+
+        <div class="project-media">
+          <img src="drl-eval.gif" alt="Evaluation GIF showing the DRL robot planner navigating around obstacles">
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/OguzhanKirik/drl">Code repository</a>
+          <a href="https://arxiv.org/abs/2301.05980">Paper</a>
+        </div>
+
+        <p class="citation">
+          Citation: Teham Bhuiyan, Linh Kästner, Yifan Hu, Benno Kutschank, and Jens Lambrecht.
+          <a href="https://arxiv.org/abs/2301.05980">Deep-Reinforcement-Learning-based Path Planning for Industrial Robots using Distance Sensors as Observation</a>.
+          arXiv:2301.05980, 2023.
         </p>
       </section>
 
